@@ -14,6 +14,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 
+- `axi_decerr_slv` can now generate either `SLVERR` or `DECERR` error responses, via the Resp
+parameter. It has been renamed accordingly, to `axi_err_slv`.
+
 ### Fixed
 
 
