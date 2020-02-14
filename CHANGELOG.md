@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 
 ### Changed
+- `axi_decerr_slv` has been replaced by a more generic `axi_err_slv`, which takes the kind of error
+  as parameter.
 
 ### Fixed
 - `tb_axi_xbar`: Fix for localparam `AxiIdWidthSlaves` to be dependent on the number of masters.
