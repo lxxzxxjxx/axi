@@ -10,8 +10,8 @@
 
 // Author: Wolfgang Roenninger <wroennin@ethz.ch>
 
-// AXI Error Slave: This module always responds with an AXI error for transactions
-// which are sent to it. Depends on `axi_atop_filter` for atomics support.
+// AXI Error Slave: This module always responds with an AXI error for transactions that are sent to
+// it. Depends on `axi_atop_filter` for atomics support.
 
 module axi_err_slv #(
   parameter int unsigned    AxiIdWidth  = 0,                    // AXI ID Width
