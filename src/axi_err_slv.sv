@@ -223,6 +223,6 @@ module axi_err_slv #(
       $fatal(1, "This module may only generate RESP_DECERR or RESP_SLVERR responses!");
   end
   `endif
-  // pragma translate_off
+  // pragma translate_on
 
 endmodule
