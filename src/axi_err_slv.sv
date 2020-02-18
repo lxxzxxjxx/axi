@@ -236,7 +236,13 @@ module axi_err_slv #(
   );
 
   // Assertion
-  if (Resp != axi_pkg::RESP_DECERR && Resp != axi_pkg::RESP_SLVERR)
-    $fatal(1, "[axi_err_slv] This module only generates RESP_DECERR and RESP_SLVERR responses.");
+  // pragma translate_off
+  `ifndef VERILATOR
+  initial begin
+    assert (Resp != axi_pkg::RESP_DECERR && Resp != axi_pkg::RESP_SLVERR) else
+      $fatal(1, "[axi_err_slv] This module only generates RESP_DECERR and RESP_SLVERR responses.");
+  end
+  `endif
+  // pragma translate_off
 
 endmodule
